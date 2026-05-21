@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proofsnap-cli"
+version = "0.1.0"
+description = "No-cloud, one-command transcription toolkit starter"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "ProofSnap" }]
+dependencies = []
+
+[project.scripts]
+proofsnap = "proofsnap_cli.main:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
